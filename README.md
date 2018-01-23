@@ -37,3 +37,62 @@ import ___ as ___
 dataset = dw.___(___)
 ```
 
+## Step 3: Reading Files
+
+JSON is a common format to store and transfer hierarchical dictionary values in python.  Here is a JSON file. Copy it to a file called "test.json"
+```JSON
+{ "office": 
+    {"medical": [
+      { "room-number": 100,
+        "use": "reception",
+        "sq-ft": 50,
+        "price": 75
+      },
+      { "room-number": 101,
+        "use": "waiting",
+        "sq-ft": 250,
+        "price": 75
+      },
+      { "room-number": 102,
+        "use": "examination",
+        "sq-ft": 125,
+        "price": 150
+      },
+      { "room-number": 103,
+        "use": "examination",
+        "sq-ft": 125,
+        "price": 150
+      },
+      { "room-number": 104,
+        "use": "office",
+        "sq-ft": 150,
+        "price": 100
+      }
+    ]},
+    "parking": {
+      "location": "premium",
+      "style": "covered",
+      "price": 750
+    }
+} 
+ ```
+ 
+* Now, Read the file into python and print the style of parking in office. Complete the following code
+```
+# import the json module
+import ----
+
+# open the file. Complete the filename
+f=open(----)
+
+# load JSON
+--- = json.load(f)
+
+#complete the next statement
+print datastore["office"]["parking"]----
+```
+
+
+
+
+Co
